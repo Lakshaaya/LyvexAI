@@ -6,7 +6,7 @@ function Alerts() {
 
   useEffect(() => {
     const fetchLogs = () => {
-      fetch("http://127.0.0.1:8000/logs")
+      fetch("https://lyvexai-backend.onrender.com/logs")
         .then((res) => res.json())
         .then((data) => setLogs(data))
         .catch((err) => console.error(err));

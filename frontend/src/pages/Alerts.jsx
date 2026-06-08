@@ -4,7 +4,7 @@ function Alerts() {
   const [alerts, setAlerts] = useState([]);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/alerts")
+    fetch("https://lyvexai-backend.onrender.com/alerts")
       .then((res) => res.json())
       .then((data) => setAlerts(data))
       .catch((err) => console.error(err));
